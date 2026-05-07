@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FOR !D WhatsApp Message</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18113561351"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18113561351');
+  </script>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -45,12 +56,16 @@
     function showLang(lang, el) {
       const content = document.getElementById("text");
       content.classList.remove("visible");
+
       setTimeout(() => {
         content.innerText = messages[lang];
         content.classList.add("visible");
       }, 150);
 
-      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(tab => 
+        tab.classList.remove('active')
+      );
+
       el.classList.add('active');
     }
   </script>
