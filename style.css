@@ -27,7 +27,8 @@ h1 {
   transition: background 0.3s, color 0.3s;
 }
 
-.tab:hover, .tab.active {
+.tab:hover,
+.tab.active {
   background: #00ff88;
   color: #000;
 }
@@ -51,8 +52,13 @@ h1 {
 }
 
 @keyframes pulse {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(5px); }
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
 }
 
 .whatsapp-btn {
